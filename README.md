@@ -1,4 +1,4 @@
-# Notebooks and Python learning data science
+# Notebooks on learning data science
 
 Most of the examples presented in tutorials are either using powerful libraries, or data samples with many features.
 
