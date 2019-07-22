@@ -1,5 +1,4 @@
-# data-science
-Notebooks and Python about data science
+# Notebooks and Python learning data science
 
 Most of the examples presented in tutorials are either using powerful libraries, or data samples with many features.
 
@@ -12,7 +11,7 @@ On purpose, these work books are based on generated data more than on experiment
 Linear regression is the mother of Data Science algorithm.
 
 Let's progressively start from simple univariate example and then add progressively more complexity:
-- [Univariate function approximation with linear regression](/linear/LinearRegressionUnivariate.ipy)
+- [Univariate function approximation with linear regression](/linear/LinearRegressionUnivariate.ipynb)
   - [Using Tensor Flow](linear/LinearRegressionUnivariate-TensorFlow.ipynb)
 - [Bivariate function approximation with linear regression](linear/LinearRegressionBivariate.ipynb)
 
