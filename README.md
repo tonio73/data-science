@@ -8,6 +8,8 @@ On purpose, used data is generated as it allows for more flexibility as paramete
 
 The notebooks are of type Jupyter, using Python 3.
 
+![Do not get confused](assets/Confused_640.png)
+
 ## Linear regression
 
 Linear regression is the mother of Data Science algorithm.
