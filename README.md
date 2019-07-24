@@ -11,13 +11,15 @@ On purpose, these work books are based on generated data more than on experiment
 Linear regression is the mother of Data Science algorithm.
 
 Let's progressively start from simple univariate example and then add progressively more complexity:
-- [Univariate function approximation with linear regression](/linear/LinearRegressionUnivariate.ipynb)
+- [Univariate function approximation with linear regression](/linear/LinearRegressionUnivariate.ipynb), closed form, with Numpy, Scipy or SKLearn, eventually with gradient descent and stochastic gradient descent
   - [Using Tensor Flow](linear/LinearRegressionUnivariate-TensorFlow.ipynb)
 - [Bivariate function approximation with linear regression](linear/LinearRegressionBivariate.ipynb)
 
 ## Classification
 
 Classification is the other side of the coin in Data Science.
+
+### Binary classification
 
 Let's start with the binary classification and logistic regression and add some more refinements:
 - [Univariate function as boundary on a two classes data, approximated with logistic regression](classification/ClassificationContinuousSingleFeature.ipynb)
