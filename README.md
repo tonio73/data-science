@@ -30,3 +30,10 @@ Let's start with the binary classification and logistic regression and add some 
 - [Bivariate parametric function as a boundary, approximated with logistic regression](classification/ClassificationContinuous2Features.html)
   - [Using Tensor flow](classification/ClassificationContinuous2Features-TensorFlow.html)
   - [Using Keras](classification/ClassificationContinuous2Features-Keras.html), adding regularizers and eventually a two layer neural net
+  
+  
+# Reading list
+
+## Nice notebooks
+
+- [Probabilistic programming and Bayesian methods for hackers](https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers)
