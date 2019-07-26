@@ -23,7 +23,7 @@ Let's progressively start from simple univariate example and then add progressiv
 
 Classification is the other side of the coin in Data Science.
 
-### Binary classification
+### Binary classification with parametric model
 
 Let's start with the binary classification and logistic regression and add some more refinements:
 - [Univariate function as boundary on a two classes data, approximated with logistic regression](classification/ClassificationContinuousSingleFeature.html)
@@ -31,9 +31,17 @@ Let's start with the binary classification and logistic regression and add some 
   - [Using Tensor flow](classification/ClassificationContinuous2Features-TensorFlow.html)
   - [Using Keras](classification/ClassificationContinuous2Features-Keras.html), adding regularizers and eventually a two layer neural net
   
+### Binary classification with non-parametric model
+
+- [Bivariate with K Nearest Neighbors (KNN)](classification/ClassificationContinuous2Features.html
   
 # Reading list
 
 ## Nice notebooks
 
 - [Probabilistic programming and Bayesian methods for hackers](https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers)
+
+## Papers
+
+- [You Look Only Once: Unified, Real-time object detection](https://pjreddie.com/media/files/papers/yolo_1.pdf)
+  - [YOLO in Keras - Machine Learning Mastery](https://machinelearningmastery.com/how-to-perform-object-detection-with-yolov3-in-keras/)
