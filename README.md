@@ -17,7 +17,7 @@ Linear regression is the mother of Data Science algorithm.
 Let's progressively start from simple univariate example and then add progressively more complexity:
 - [Univariate function approximation with linear regression](/linear/LinearRegressionUnivariate.html), closed form, with Numpy, Scipy or SKLearn, eventually with gradient descent and stochastic gradient descent
   - [Using Tensor Flow](linear/LinearRegressionUnivariate-TensorFlow.html)
-- [Bivariate function approximation with linear regression](linear/LinearRegressionBivariate.html)
+- [Bivariate function approximation with linear regression](linear/LinearRegressionBivariate.html), closed formed, with SKLearn, (stochastic) gradient descent, regularizer
 
 ## Classification
 
@@ -33,7 +33,7 @@ Let's start with the binary classification and logistic regression and add some 
   
 ### Binary classification with non-parametric model
 
-- [Bivariate with K Nearest Neighbors (KNN)](classification/ClassificationContinuous2Features.html
+- [Bivariate with K Nearest Neighbors (KNN)](classification/ClassificationContinuous2Features-KNN.html)
   
 # Reading list
 
