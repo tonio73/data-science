@@ -1,10 +1,10 @@
-# Learning data science
+# Learning data science step by step
 
-Most of the examples presented in tutorials are either using powerful libraries, or based on data samples with many features.
+Most of the examples presented in Internet tutorials are either using powerful libraries (Scikit Learn, Keras...), complex models (neural nets), or based on data samples with many features.
 
-In this collection of workbooks, we want to start from simple examples and raw Python code and then progressively complexify the data sets and use more complex technics, libraries and datasets.
+In this collection of workbooks, I want to start from simple examples and raw Python code and then progressively complexify the data sets and use more complex technics and libraries.
 
-On purpose, used data is generated as it allows for more flexibility as parameters are modifiable.
+On purpose, datasets are generated in order to adjust the parameters fitting with the demonstration.
 
 The notebooks are of type Jupyter, using Python 3.
 
@@ -15,9 +15,9 @@ The notebooks are of type Jupyter, using Python 3.
 Linear regression is the mother of Data Science algorithm.
 
 Let's progressively start from simple univariate example and then add progressively more complexity:
-- [Univariate function approximation with linear regression](/linear/LinearRegressionUnivariate.html), closed form, with Numpy, Scipy or SKLearn, eventually with gradient descent and stochastic gradient descent
-  - [Using Tensor Flow](linear/LinearRegressionUnivariate-TensorFlow.html)
-- [Bivariate function approximation with linear regression](linear/LinearRegressionBivariate.html), closed formed, with SKLearn, (stochastic) gradient descent, regularizer
+- [Univariate function approximation with linear regression](linear/LinearRegressionUnivariate.html), closed form, with Numpy, Scipy or SciKit Learn, eventually with gradient descent and stochastic gradient descent ([Notebook](linear/LinearRegressionUnivariate.ipynb))
+  - [Using Tensor Flow](linear/LinearRegressionUnivariate-TensorFlow.html) ([Notebook](linear/LinearRegressionUnivariate-TensorFlow.ipynb))
+- [Bivariate function approximation with linear regression](linear/LinearRegressionBivariate.html), closed formed, using SciKit Learn, (stochastic) gradient descent, adding regularizer ([Notebook](linear/LinearRegressionBivariate.ipynb))
 
 ## Classification
 
@@ -26,14 +26,14 @@ Classification is the other side of the coin in Data Science.
 ### Binary classification with parametric model
 
 Let's start with the binary classification and logistic regression and add some more refinements:
-- [Univariate function as boundary on a two classes data, approximated with logistic regression](classification/ClassificationContinuousSingleFeature.html)
-- [Bivariate parametric function as a boundary, approximated with logistic regression](classification/ClassificationContinuous2Features.html)
-  - [Using Tensor flow](classification/ClassificationContinuous2Features-TensorFlow.html)
-  - [Using Keras](classification/ClassificationContinuous2Features-Keras.html), adding regularizers and eventually a two layer neural net
+- [Univariate function as boundary on a two classes data, approximated with logistic regression](classification/ClassificationContinuousSingleFeature.html), homemade, using SciKit Learn ([Notebook](classification/ClassificationContinuousSingleFeature.ipynb))
+- [Bivariate parametric function as a boundary, approximated with logistic regression](classification/ClassificationContinuous2Features.html), homemade, using SciKit Learn ([Notebook](classification/ClassificationContinuous2Features.ipynb))
+  - [Using Tensor flow](classification/ClassificationContinuous2Features-TensorFlow.html) ([Notebook](classification/ClassificationContinuous2Features-TensorFlow.ipynb))
+  - [Using Keras](classification/ClassificationContinuous2Features-Keras.html), adding regularizers and eventually a two layer neural net ([Notebook](classification/ClassificationContinuous2Features-Keras.ipynb))
   
 ### Binary classification with non-parametric model
 
-- [Bivariate with K Nearest Neighbors (KNN)](classification/ClassificationContinuous2Features-KNN.html)
+- [Bivariate with K Nearest Neighbors (KNN)](classification/ClassificationContinuous2Features-KNN.html), homemade, using SciKit Learn ([Notebook](classification/ClassificationContinuous2Features-KNN.ipynb))
   
 # Reading list
 
@@ -45,3 +45,8 @@ Let's start with the binary classification and logistic regression and add some 
 
 - [You Look Only Once: Unified, Real-time object detection](https://pjreddie.com/media/files/papers/yolo_1.pdf)
   - [YOLO in Keras - Machine Learning Mastery](https://machinelearningmastery.com/how-to-perform-object-detection-with-yolov3-in-keras/)
+  
+  
+## Articles
+
+- Build the right Autoencoder — Tune and Optimize using PCA principles - Medium [Part I](https://medium.com/@cran2367/build-the-right-autoencoder-tune-and-optimize-using-pca-principles-part-i-1f01f821999b), [Part II](https://medium.com/@cran2367/build-the-right-autoencoder-tune-and-optimize-using-pca-principles-part-ii-24b9cca69bd6)

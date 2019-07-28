@@ -13345,7 +13345,8 @@ y_u = y - b = x w
 \begin{align}
 w_{est} = min_w \lVert x w - y_u \rVert_2^2
 \end{align}\begin{align}
-L_2(w) &amp; = \lVert x w - y_u \rVert_2^2 = (x w - y_u)^T(x w - y_u) \\
+L_2(w) &amp; = \lVert x w - y_u \rVert_2^2 \\
+&amp; = (x w - y_u)^T(x w - y_u) \\
 &amp; = w^T x^T x w + y_u^T y_u - 2 x^T w^T y_u
 \end{align}<p>Lookup the minimum through the partial derivate:</p>
 $$\frac{\partial{L_2(w)}}{\partial w} = 2 x^T x w - 2 x^T  y_u$$<p>If $x^T x$ can be inverted:
@@ -13423,6 +13424,13 @@ $$\frac{\partial{L_2(w)}}{\partial w} = 0 \iff w = (x^T x)^{-1} x^T y_u$$</p>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Test-model">Test model<a class="anchor-link" href="#Test-model">&#182;</a></h3>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -13527,6 +13535,13 @@ $$\frac{\partial{L_2(w)}}{\partial w} = 0 \iff w = (x^T x)^{-1} x^T y_u$$</p>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Test-model">Test model<a class="anchor-link" href="#Test-model">&#182;</a></h3>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
@@ -13628,6 +13643,13 @@ $$\frac{\partial{L_2(w)}}{\partial w} = 0 \iff w = (x^T x)^{-1} x^T y_u$$</p>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Test-model">Test model<a class="anchor-link" href="#Test-model">&#182;</a></h3>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -13733,6 +13755,13 @@ $$\frac{\partial{L_2(w)}}{\partial w} = 0 \iff w = (x^T x)^{-1} x^T y_u$$</p>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Test-model">Test model<a class="anchor-link" href="#Test-model">&#182;</a></h3>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[18]:</div>
@@ -13836,6 +13865,13 @@ $$\frac{\partial{L_2(w)}}{\partial w} = 0 \iff w = (x^T x)^{-1} x^T y_u$$</p>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Test-model">Test model<a class="anchor-link" href="#Test-model">&#182;</a></h3>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[21]:</div>
@@ -13906,12 +13942,12 @@ $$\frac{\partial{L_2(w)}}{\partial w} = 0 \iff w = (x^T x)^{-1} x^T y_u$$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model6</span> <span class="o">=</span> <span class="n">skLinearRegression</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">model6</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">xTrain</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="n">yTrain</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;SciKit Learn linear regression, b =&#39;</span><span class="p">,</span> <span class="n">model6</span><span class="o">.</span><span class="n">intercept_</span><span class="p">,</span> <span class="s1">&#39;, w =&#39;</span><span class="p">,</span> <span class="n">model6</span><span class="o">.</span><span class="n">coef_</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;SciKit Learn linear regression, b =&#39;</span><span class="p">,</span> <span class="n">model6</span><span class="o">.</span><span class="n">intercept_</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;, w =&#39;</span><span class="p">,</span> <span class="n">model6</span><span class="o">.</span><span class="n">coef_</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -13928,7 +13964,7 @@ $$\frac{\partial{L_2(w)}}{\partial w} = 0 \iff w = (x^T x)^{-1} x^T y_u$$</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>SciKit Learn linear regression, b = [ 0.32295742] , w = [[ 0.14533895]]
+<pre>SciKit Learn linear regression, b = 0.322957419128 , w = 0.145338950327
 </pre>
 </div>
 </div>
@@ -13939,7 +13975,7 @@ $$\frac{\partial{L_2(w)}}{\partial w} = 0 \iff w = (x^T x)^{-1} x^T y_u$$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;SciKit Learn, R^2-score =&#39;</span><span class="p">,</span> <span class="n">model6</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">xTest</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="n">yTest</span><span class="p">))</span>
@@ -13967,6 +14003,13 @@ $$\frac{\partial{L_2(w)}}{\partial w} = 0 \iff w = (x^T x)^{-1} x^T y_u$$</p>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Test-model">Test model<a class="anchor-link" href="#Test-model">&#182;</a></h3>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -14111,13 +14154,13 @@ $$\frac{\partial{L_2(w)}}{\partial w} = 0 \iff w = (x^T x)^{-1} x^T y_u$$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Gradient-descent">Gradient descent<a class="anchor-link" href="#Gradient-descent">&#182;</a></h3>
+<h2 id="Gradient-descent">Gradient descent<a class="anchor-link" href="#Gradient-descent">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Initial coef</span>
@@ -14128,16 +14171,15 @@ $$\frac{\partial{L_2(w)}}{\partial w} = 0 \iff w = (x^T x)^{-1} x^T y_u$$</p>
 <span class="c1"># learningRate = 0.0001</span>
 <span class="n">gradient</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">xUnB</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">w7</span><span class="o">*</span><span class="n">xUnB</span> <span class="o">-</span> <span class="n">yUnB</span><span class="p">)</span>
 <span class="n">gradientNorm</span> <span class="o">=</span> <span class="n">gradient</span><span class="o">**</span><span class="mi">2</span> <span class="c1"># univariate</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;w start =&#39;</span><span class="p">,</span> <span class="n">w7</span><span class="p">,</span> <span class="s1">&#39;, Gradient norm =&#39;</span><span class="p">,</span> <span class="n">gradientNorm</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;w start =&#39;</span><span class="p">,</span> <span class="n">w7</span><span class="p">,</span> <span class="s1">&#39;, Gradient norm = </span><span class="si">{:.3e}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">gradientNorm</span><span class="p">))</span>
 <span class="n">w7Learn</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">w7</span><span class="p">,</span> <span class="n">gradientNorm</span><span class="p">])]</span>
 <span class="k">while</span> <span class="n">gradientNorm</span> <span class="o">&gt;</span> <span class="n">threshold</span><span class="p">:</span>
-<span class="c1">#for i in range(10):</span>
     <span class="n">w7</span> <span class="o">=</span> <span class="n">w7</span> <span class="o">-</span> <span class="n">learningRate</span> <span class="o">*</span> <span class="n">gradient</span>
     <span class="n">gradient</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">xUnB</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">w7</span><span class="o">*</span><span class="n">xUnB</span> <span class="o">-</span> <span class="n">yUnB</span><span class="p">)</span> 
     <span class="n">gradientNorm</span> <span class="o">=</span> <span class="n">gradient</span><span class="o">**</span><span class="mi">2</span>
-    <span class="c1">#print(&#39;w =&#39;, w7, &#39;, Gradient norm =&#39;, gradientNorm)</span>
     <span class="n">w7Learn</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">w7</span><span class="p">,</span>  <span class="n">gradientNorm</span><span class="p">]))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;w end =&#39;</span><span class="p">,</span> <span class="n">w7</span><span class="p">,</span> <span class="s1">&#39;, Gradient norm =&#39;</span><span class="p">,</span> <span class="n">gradientNorm</span><span class="p">,</span> <span class="s1">&#39;, num iteration =&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">w7Learn</span><span class="p">))</span>
+    
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;w end =&#39;</span><span class="p">,</span> <span class="n">w7</span><span class="p">,</span> <span class="s1">&#39;, Gradient norm = </span><span class="si">{:.3e}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">gradientNorm</span><span class="p">),</span> <span class="s1">&#39;, num iteration =&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">w7Learn</span><span class="p">))</span>
 <span class="n">df7</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">w7Learn</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="s1">&#39;Gradient norm&#39;</span><span class="p">))</span>
 </pre></div>
 
@@ -14155,8 +14197,8 @@ $$\frac{\partial{L_2(w)}}{\partial w} = 0 \iff w = (x^T x)^{-1} x^T y_u$$</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>w start = 2 , Gradient norm = 14930144.1086
-w end = 0.145338960061 , Gradient norm = 4.11276824449e-10 , num iteration = 7
+<pre>w start = 2 , Gradient norm = 1.493e+07
+w end = 0.145338960061 , Gradient norm = 4.113e-10 , num iteration = 7
 </pre>
 </div>
 </div>
@@ -14245,6 +14287,13 @@ w end = 0.145338960061 , Gradient norm = 4.11276824449e-10 , num iteration = 7
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Test-model">Test model<a class="anchor-link" href="#Test-model">&#182;</a></h3>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -14335,28 +14384,29 @@ w end = 0.145338960061 , Gradient norm = 4.11276824449e-10 , num iteration = 7
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Nbatch</span> <span class="o">=</span> <span class="mi">100</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nBatch</span> <span class="o">=</span> <span class="mi">100</span>
 <span class="n">w8</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">threshold</span> <span class="o">=</span> <span class="mf">1e-7</span>
 <span class="n">learningRate</span> <span class="o">=</span> <span class="mf">0.05</span>
 <span class="c1"># Initial batch</span>
-<span class="n">xBatch</span><span class="p">,</span> <span class="n">yBatch</span><span class="p">,</span> <span class="n">yBC</span> <span class="o">=</span> <span class="n">generateBatch</span><span class="p">(</span><span class="n">Nbatch</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">xBatch</span><span class="p">,</span> <span class="n">yBatch</span><span class="p">,</span> <span class="n">yBC</span> <span class="o">=</span> <span class="n">generateBatch</span><span class="p">(</span><span class="n">nBatch</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
 <span class="n">gradient</span> <span class="o">=</span> <span class="n">calcGradient</span><span class="p">(</span><span class="n">xBatch</span><span class="p">,</span> <span class="n">yBatch</span><span class="p">,</span> <span class="n">w8</span><span class="p">)</span>
 <span class="n">gradientNorm</span> <span class="o">=</span> <span class="n">gradient</span><span class="o">**</span><span class="mi">2</span> <span class="c1"># univariate</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;w start =&#39;</span><span class="p">,</span> <span class="n">w8</span><span class="p">,</span> <span class="s1">&#39;, Gradient norm =&#39;</span><span class="p">,</span> <span class="n">gradientNorm</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;w start =&#39;</span><span class="p">,</span> <span class="n">w8</span><span class="p">,</span> <span class="s1">&#39;, Gradient norm = </span><span class="si">{:.3e}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">gradientNorm</span><span class="p">))</span>
 <span class="n">w8Learn</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">w8</span><span class="p">,</span> <span class="n">gradientNorm</span><span class="p">])]</span>
 <span class="c1"># Continue</span>
 <span class="k">while</span> <span class="n">gradientNorm</span> <span class="o">&gt;</span> <span class="n">threshold</span><span class="p">:</span>
     <span class="n">w8</span> <span class="o">=</span> <span class="n">w8</span> <span class="o">-</span> <span class="n">learningRate</span> <span class="o">*</span> <span class="n">gradient</span>
-    <span class="n">xBatch</span><span class="p">,</span> <span class="n">yBatch</span><span class="p">,</span> <span class="n">yBC</span> <span class="o">=</span> <span class="n">generateBatch</span><span class="p">(</span><span class="n">Nbatch</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+    <span class="n">xBatch</span><span class="p">,</span> <span class="n">yBatch</span><span class="p">,</span> <span class="n">yBC</span> <span class="o">=</span> <span class="n">generateBatch</span><span class="p">(</span><span class="n">nBatch</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
     <span class="n">gradient</span> <span class="o">=</span> <span class="n">calcGradient</span><span class="p">(</span><span class="n">xBatch</span><span class="p">,</span> <span class="n">yBatch</span><span class="p">,</span> <span class="n">w8</span><span class="p">)</span>
     <span class="n">gradientNorm</span> <span class="o">=</span> <span class="n">gradient</span><span class="o">**</span><span class="mi">2</span>
     <span class="n">w8Learn</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">w7</span><span class="p">,</span>  <span class="n">gradientNorm</span><span class="p">]))</span>
     <span class="n">learningRate</span> <span class="o">=</span> <span class="n">learningRate</span> <span class="o">*</span> <span class="mf">0.99</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;w end =&#39;</span><span class="p">,</span> <span class="n">w8</span><span class="p">,</span> <span class="s1">&#39;, Gradient norm =&#39;</span><span class="p">,</span> <span class="n">gradientNorm</span><span class="p">,</span> <span class="s1">&#39;, num iteration =&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">w8Learn</span><span class="p">))</span>
+    
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;w end =&#39;</span><span class="p">,</span> <span class="n">w8</span><span class="p">,</span> <span class="s1">&#39;, Gradient norm = </span><span class="si">{:.3e}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">gradientNorm</span><span class="p">),</span> <span class="s1">&#39;, num iteration =&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">w8Learn</span><span class="p">))</span>
 <span class="n">df8</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">w8Learn</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="s1">&#39;Gradient norm&#39;</span><span class="p">))</span>
 </pre></div>
 
@@ -14374,8 +14424,8 @@ w end = 0.145338960061 , Gradient norm = 4.11276824449e-10 , num iteration = 7
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>w start = 10 , Gradient norm = 434.762415651
-w end = 0.145773002807 , Gradient norm = 5.08915312737e-08 , num iteration = 167
+<pre>w start = 10 , Gradient norm = 3.709e+02
+w end = 0.146649194948 , Gradient norm = 1.818e-08 , num iteration = 131
 </pre>
 </div>
 </div>
@@ -14464,6 +14514,13 @@ w end = 0.145773002807 , Gradient norm = 5.08915312737e-08 , num iteration = 167
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Test-model">Test model<a class="anchor-link" href="#Test-model">&#182;</a></h3>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
