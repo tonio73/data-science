@@ -13200,8 +13200,8 @@ div#notebook {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">N</span> <span class="o">=</span> <span class="mi">100000</span>
 <span class="n">xTrain</span><span class="p">,</span> <span class="n">yTrain</span><span class="p">,</span> <span class="n">yTrainClean</span> <span class="o">=</span> <span class="n">generateBatch</span><span class="p">(</span><span class="n">N</span><span class="p">);</span>
-
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">xTrain</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="s1">&#39;, yClean&#39;</span><span class="p">,</span> <span class="n">yTrainClean</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="s1">&#39;, y&#39;</span><span class="p">,</span> <span class="n">yTrain</span><span class="o">.</span><span class="n">shape</span><span class="p">);</span>
+
 <span class="n">xTest</span><span class="p">,</span> <span class="n">yTest</span><span class="p">,</span> <span class="n">yTestClean</span> <span class="o">=</span> <span class="n">generateBatch</span><span class="p">(</span><span class="n">N</span><span class="p">);</span>
 </pre></div>
 
@@ -13310,6 +13310,19 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>See <a href="LinearRegressionUnivariate.ipynb">Univariate regression workbook for more details</a></p>
+\begin{align}
+w_{est} = min_w \lVert x w - y_u \rVert_2^2
+\end{align}\begin{align}
+L_2(w) &amp; = \lVert x w - y_u \rVert_2^2 \\
+\end{align}<p>Lookup the minimum through the partial derivate:</p>
+$$\frac{\partial{L_2(w)}}{\partial w} = 0 \iff w = (x^T x)^{-1} x^T y_u$$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Maison">Maison<a class="anchor-link" href="#Maison">&#182;</a></h2>
 </div>
 </div>
@@ -13382,6 +13395,13 @@ div#notebook {
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Test-model">Test model<a class="anchor-link" href="#Test-model">&#182;</a></h3>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -13551,6 +13571,13 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Test-model">Test model<a class="anchor-link" href="#Test-model">&#182;</a></h3>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[13]:</div>
@@ -13638,7 +13665,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fit4</span><span class="p">,</span> <span class="n">residues</span><span class="p">,</span> <span class="n">rank</span><span class="p">,</span> <span class="n">s</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">lstsq</span><span class="p">(</span><span class="n">xUnB</span><span class="p">,</span> <span class="n">yUnB</span><span class="p">)</span>
@@ -13649,26 +13676,13 @@ div#notebook {
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[15]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([ 0.1131563 , -0.00018465])</pre>
 </div>
-
-</div>
-
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Test-model">Test model<a class="anchor-link" href="#Test-model">&#182;</a></h3>
 </div>
 </div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -13924,6 +13938,13 @@ w end = [ 0.11315671 -0.00018465] , Gradient norm = 7.28607715634e-07 , num iter
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Test-model">Test model<a class="anchor-link" href="#Test-model">&#182;</a></h3>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[22]:</div>
@@ -14147,6 +14168,13 @@ w end = [  1.13392909e-01   4.12701095e-05] , Gradient norm = 4.52357327916e-07 
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Test-model">Test model<a class="anchor-link" href="#Test-model">&#182;</a></h3>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[27]:</div>
@@ -14346,6 +14374,13 @@ w end = [  1.49233956e-02   6.81308062e-04  -1.57354703e-01   7.70400727e-02
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Convergence is not correct on $w_{1}$ that should only feature a small coefficient on the 2nd order term and no coefficient on the fourth order $w_{1,4}$</p>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Test-model">Test model<a class="anchor-link" href="#Test-model">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14581,6 +14616,13 @@ w end = [ -3.71032897e-02  -1.70579612e-03   4.98084372e-02   8.80188483e-02
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Test-model">Test model<a class="anchor-link" href="#Test-model">&#182;</a></h3>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[36]:</div>
@@ -14655,7 +14697,7 @@ w end = [ -3.71032897e-02  -1.70579612e-03   4.98084372e-02   8.80188483e-02
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Conclusion-on-SGD-with-regularizer">Conclusion on SGD with regularizer<a class="anchor-link" href="#Conclusion-on-SGD-with-regularizer">&#182;</a></h4><p>The regularizer has a larger effect on 3rd and 4th degree terms, leading to a fitting that mostly use 1st and 2nd degree (parabolic)</p>
+<h3 id="Conclusion-on-SGD-with-regularizer">Conclusion on SGD with regularizer<a class="anchor-link" href="#Conclusion-on-SGD-with-regularizer">&#182;</a></h3><p>The regularizer has a larger effect on 3rd and 4th degree terms, leading to a fitting that mostly use 1st and 2nd degree (parabolic)</p>
 <p>Also, the bias (intercept) seems a little to low, leading to higher MSE.</p>
 
 </div>
