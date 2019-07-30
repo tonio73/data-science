@@ -24,7 +24,7 @@ Let's progressively start from simple univariate example and then add progressiv
 
 Classification is the other side of the coin in Data Science.
 
-### Binary classification with parametric model
+### Binary classification with parametric models
 
 Let's start with the binary classification and logistic regression and add some more refinements:
 - [Univariate function as boundary on a two classes data, approximated with logistic regression](classification/ClassificationContinuousSingleFeature.html), homemade, using SciKit Learn ([Notebook](classification/ClassificationContinuousSingleFeature.ipynb))
@@ -32,9 +32,16 @@ Let's start with the binary classification and logistic regression and add some 
   - [Using Tensor flow](classification/ClassificationContinuous2Features-TensorFlow.html) ([Notebook](classification/ClassificationContinuous2Features-TensorFlow.ipynb))
   - [Using Keras](classification/ClassificationContinuous2Features-Keras.html), adding regularizers and eventually a two layer neural net ([Notebook](classification/ClassificationContinuous2Features-Keras.ipynb))
   
-### Binary classification with non-parametric model
+### Binary classification with non-parametric models
 
+Beyond (linear) regression, non-parametric models:
 - [Bivariate with K Nearest Neighbors (KNN)](classification/ClassificationContinuous2Features-KNN.html), homemade, using SciKit Learn ([Notebook](classification/ClassificationContinuous2Features-KNN.ipynb))
+
+### Multi-class regression
+
+Going further with more than two classes or categories:
+- Two features to separate the 2D plan into 3 or more categories
+  - [Using Keras](classification/ClassificationMulti2Features-Keras.html) matching on linearly separable problem (Czech flag) and not linearly separable problem (Norway flag), using 2 and 3 layer neural net to handle the second problem [Notebook](classification/ClassificationMulti2Features-Keras.ipynb)
   
 # Reading list
 
@@ -48,6 +55,10 @@ Let's start with the binary classification and logistic regression and add some 
   - [YOLO in Keras - Machine Learning Mastery](https://machinelearningmastery.com/how-to-perform-object-detection-with-yolov3-in-keras/)
   
   
+## Tutorials
+
+- [Deep learning tutorial - Stanford](http://ufldl.stanford.edu/tutorial/)
+
 ## Articles
 
 - Build the right Autoencoder — Tune and Optimize using PCA principles - Medium [Part I](https://medium.com/@cran2367/build-the-right-autoencoder-tune-and-optimize-using-pca-principles-part-i-1f01f821999b), [Part II](https://medium.com/@cran2367/build-the-right-autoencoder-tune-and-optimize-using-pca-principles-part-ii-24b9cca69bd6)
