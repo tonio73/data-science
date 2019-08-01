@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
 
@@ -13109,6 +13110,31 @@ div#notebook {
     });
     </script>
     <!-- End of mathjax configuration --></head>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="/data-science/assets/css/style.css?v=9033ce03a74e40fe7a9f1cd464f761ff7c5f4711">
+    <style>
+        #project_star {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 300;
+            background: none;
+         }
+    </style>
+
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/tonio73/data-science">View on GitHub</a>
+
+          <h1 id="project_title"><a href="/data-science">data-science</a></h1>
+          <h2 id="project_tagline">Notebooks and Python about data science</h2>
+          <h5 id="project_star">If you like this project please add your <a class="github-button" href="https://github.com/tonio73/data-science" data-icon="octicon-star" aria-label="Star tonio73/data-science on GitHub">Star</a>
+          </h5>
+        </header>
+    </div>
+    
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content">
+        
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
@@ -13116,9 +13142,10 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Binary-classification-from-2-features-with-Keras">Binary classification from 2 features with Keras<a class="anchor-link" href="#Binary-classification-from-2-features-with-Keras">&#182;</a></h1><p>Classification using Keras, performing a classification similar to ClassificationContinuous2Features-TensorFlow.</p>
-<p>Based on the same data model as in the ClassificationContinuous2Features workbook.</p>
+<h1 id="Binary-classification-from-2-features-with-Keras">Binary classification from 2 features with Keras<a class="anchor-link" href="#Binary-classification-from-2-features-with-Keras">&#182;</a></h1><p>Classification using Keras, performing a classification similar to <a href="ClassificationContinuous2Features-TensorFlow.html">the TensorFlow implementation</a>.</p>
+<p>Based on the same data model as in the <a href="ClassificationContinuous2Features.html">binary classification</a> workbook.</p>
 <p>The classification is on a single boundary defined by a continuous function and added white noise.</p>
+<p>Initial model is the logistic regression implemented with Keras. A further multi-layer model is developed in order to better fit the quadratic model of the data.</p>
 
 </div>
 </div>
@@ -13135,7 +13162,6 @@ div#notebook {
 <span class="kn">import</span> <span class="nn">matplotlib.colors</span> <span class="k">as</span> <span class="nn">pltcolors</span>
 <span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">metrics</span> <span class="k">as</span> <span class="n">skMetrics</span>
 <span class="kn">import</span> <span class="nn">scikitplot</span> <span class="k">as</span> <span class="nn">skplt</span>
-<span class="kn">import</span> <span class="nn">scipy</span> <span class="k">as</span> <span class="nn">sy</span>
 <span class="kn">import</span> <span class="nn">pandas</span>
 </pre></div>
 
@@ -14149,9 +14175,30 @@ weighted avg       0.94      0.94      0.94      2000
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Where-to-go-from-here-?">Where to go from here ?<a class="anchor-link" href="#Where-to-go-from-here-?">&#182;</a></h1><p><strong>Other linear implementations and simple neural nets</strong> <a href="ClassificationContinuous2Features.html">using "raw" Python or SciKit Learn</a> (<a href="ClassificationContinuous2Features.ipynb">Notebook</a>), <a href="ClassificationContinuous2Features-TensorFlow.html">using TensorFlow</a> (<a href="ClassificationContinuous2Features-TensorFlow.ipynb">Notebook</a>), or the <a href="ClassificationContinuous2Features-KNN.html"><strong>K Nearest Neighbors classifier</strong></a> (<a href="ClassificationContinuous2Features-KNN.ipynb">Notebook</a>)</p>
+<p><strong>More complex multi-class models</strong> on the Czech and Norways flags <a href="ClassificationMulti2Features-Keras.html">using Keras</a> (<a href="ClassificationMulti2Features-Keras.ipynb">Notebook</a>), showing one of the main motivations to neural networks.</p>
+<p><strong>Compare with the two feature linear regression</strong> <a href="../linear/LinearRegressionBivariate.html">using simple algorithms</a> (<a href="LinearRegressionBivariate.ipynb]">Notebook</a>), <a href="LinearRegressionBivariate-Keras.html">or using Keras</a> (<a href="LinearRegressionUnivariate-Keras.ipynb">Notebook</a>)</p>
+
+</div>
+</div>
+</div>
     </div>
   </div>
 </body>
+      </section>
+    </div>
+    
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <h5 id="project_star">If you like this project please add your <a class="github-button" href="https://github.com/tonio73/data-science" data-icon="octicon-star" aria-label="Star tonio73/data-science on GitHub">Star</a>
+          </h5>
+        <p class="copyright">data-science maintained by <a href="https://github.com/tonio73">tonio73</a></p>
+      </footer>
+    </div>
+
 
  
 
