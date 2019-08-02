@@ -41,9 +41,8 @@ Beyond (linear) regression, non-parametric models:
 
 Going further with more than two classes or categories:
 - Two features to separate the 2D plan into 3 or more categories
-  - [Using Keras](classification/ClassificationMulti2Features-Keras.html) matching on linearly separable problem (Czech flag) and not linearly separable problem (Norway flag), using 2 and 3 layer neural net to handle the second problem [Notebook](classification/ClassificationMulti2Features-Keras.ipynb)
+  - [Using Keras](classification/ClassificationMulti2Features-Keras.html) matching on linearly separable problem (Czech flag) and not linearly separable problem (Norway flag), using 2 and 3 layer neural net to handle the second problem ([Notebook](classification/ClassificationMulti2Features-Keras.ipynb))
   
-__If you like this project, please add your <a class="github-button" href="https://github.com/tonio73/data-science" data-icon="octicon-star" aria-label="Star tonio73/data-science on GitHub">Star</a>__
   
 # Reading list
 
