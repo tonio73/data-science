@@ -13102,7 +13102,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Local-approximation-of-a-bivariate-quadratic-expression-using-linear-regression">Local approximation of a bivariate quadratic expression using linear regression<a class="anchor-link" href="#Local-approximation-of-a-bivariate-quadratic-expression-using-linear-regression">&#182;</a></h1><p>Given two features, extract y (the label), perform linear regression.
+<h1 id="Local-approximation-of-a-bivariate-polynomial-expression-using-linear-regression">Local approximation of a bivariate polynomial expression using linear regression<a class="anchor-link" href="#Local-approximation-of-a-bivariate-polynomial-expression-using-linear-regression">&#182;</a></h1><p>Given two features, extract y (the label), perform linear regression.
 Coming from the single feature model, 2 features is adding some complexity not only on the maths, but also on the display through charts.</p>
 <h3 id="Learning-goals:">Learning goals:<a class="anchor-link" href="#Learning-goals:">&#182;</a></h3><ul>
 <li>Analiticaly solve the linear regression and implement it with simple "raw" Python</li>
@@ -13321,20 +13321,20 @@ X_m &amp;=
 \begin{bmatrix}
 \mathbb{1}_n &amp; X \\
 \end{bmatrix} \\
-Y &amp;= X_m W_b \\
+Y &amp;= X_m \Theta \\
 \end{align}</p>
 <p>Using mean square error (Euclidian norm), we are looking for $w_{est}$ such that:</p>
 \begin{align}
 \Theta_{est} \in argmin_\Theta \lVert X_m \Theta - Y \rVert_2^2
 \end{align}<p>Let's define f the function to minimize:
 \begin{align}
-f(\Theta) &amp; = \lVert X_m \Theta - Y_u \rVert_2^2 \\
-&amp; = (X_m \Theta - Y_u)^T(X_m \Theta - Y_u) \\
+f(\Theta) &amp; = \lVert X_m \Theta - Y \rVert_2^2 \\
+&amp; = (X_m \Theta - Y_u)^T(X_m \Theta - Y) \\
 &amp; = \Theta^T X_m^T X_m \Theta + Y^T Y - 2 X_m^T \Theta^T Y
 \end{align}</p>
 <p>Lookup the minimum through the gradient:</p>
-$$\nabla_\Theta f(\Theta) = 2 X_m^T X_m \Theta - 2 X_m^T  Y$$<p>If $x^T x$ can be inverted:
-$$\nabla_\Theta f(\Theta) = 0 \iff \Theta = (X_m^T X_m)^{-1} X_m^T Y_u$$</p>
+$$\nabla_\Theta f(\Theta) = 2 X_m^T X_m \Theta - 2 X_m^T  Y$$<p>If $X^T X$ can be inverted:
+$$\nabla_\Theta f(\Theta) = 0 \iff \Theta = (X_m^T X_m)^{-1} X_m^T Y$$</p>
 
 </div>
 </div>
