@@ -15,11 +15,12 @@ The notebooks are of type Jupyter, using Python 3.
 Linear regression is the mother of Data Science algorithm.
 
 Let's progressively start from simple univariate example and then add progressively more complexity:
-- [Univariate function approximation with linear regression](linear/LinearRegressionUnivariate.html), closed form, with Numpy, Scipy or SciKit Learn, eventually with gradient descent and stochastic gradient descent ([Notebook](linear/LinearRegressionUnivariate.ipynb))
-  - [Using Tensor Flow](linear/LinearRegressionUnivariate-TensorFlow.html) ([Notebook](linear/LinearRegressionUnivariate-TensorFlow.ipynb))
-- [Bivariate function approximation with linear regression](linear/LinearRegressionBivariate.html), closed formed, using SciKit Learn, (stochastic) gradient descent, adding regularizer ([Notebook](linear/LinearRegressionBivariate.ipynb))
-  - [Using Keras](linear/LinearRegressionBivariate-Keras.html), single perceptron linear regression, two layer model ([Notebook](linear/LinearRegressionBivariate-Keras.ipynb)) 
-- [Feature engineering or feature learning with linear regression](linear/LinearRegressionFeatureEngineering-Keras.html) ([Notebook](linear/LinearRegressionFeatureEngineering-Keras.ipynb))
+- __Univariate function approximation with linear regression__, closed form, with Numpy, Scipy or SciKit Learn, eventually with gradient descent and stochastic gradient descent ([HTML](linear/LinearRegressionUnivariate.html) / [Notebook](linear/LinearRegressionUnivariate.ipynb))
+  - Using Tensor Flow ([HTML](linear/LinearRegressionUnivariate-TensorFlow.html) / [Jupyter](linear/LinearRegressionUnivariate-TensorFlow.ipynb))
+- __Bivariate function approximation with linear regression__, closed formed, using SciKit Learn, (stochastic) gradient descent, adding regularizer ([HTML](linear/LinearRegressionBivariate.html) / [Jupyter](linear/LinearRegressionBivariate.ipynb))
+  - Using Keras, single perceptron linear regression, two layer model ([HTML](linear/LinearRegressionBivariate-Keras.html) / [Jupyter](linear/LinearRegressionBivariate-Keras.ipynb)) 
+  - Model confidence and quality evaluation in case of the Gaussian model ([HTML](linear/LinearRegressionBivariateQuality.html) / [Jupyter](linear/LinearRegressionBivariateQuality.ipynb))
+- Feature engineering or feature learning with linear regression ([HTML](linear/LinearRegressionFeatureEngineering-Keras.html) / [Jupyter](linear/LinearRegressionFeatureEngineering-Keras.ipynb))
 
 ## Classification
 
@@ -28,21 +29,21 @@ Classification is the other side of the coin in Data Science.
 ### Binary classification with parametric models
 
 Let's start with the binary classification and logistic regression and add some more refinements:
-- [Univariate function as boundary on a two classes data, approximated with logistic regression](classification/ClassificationContinuousSingleFeature.html), homemade, using SciKit Learn ([Notebook](classification/ClassificationContinuousSingleFeature.ipynb))
-- [Bivariate parametric function as a boundary, approximated with logistic regression](classification/ClassificationContinuous2Features.html), homemade, using SciKit Learn ([Notebook](classification/ClassificationContinuous2Features.ipynb))
-  - [Using Tensor flow](classification/ClassificationContinuous2Features-TensorFlow.html) ([Notebook](classification/ClassificationContinuous2Features-TensorFlow.ipynb))
-  - [Using Keras](classification/ClassificationContinuous2Features-Keras.html), adding regularizers and eventually a two layer neural net ([Notebook](classification/ClassificationContinuous2Features-Keras.ipynb))
+- __Univariate function__ as boundary on a two classes data, __approximated with logistic regression__, homemade, using SciKit Learn ([HTML](classification/ClassificationContinuousSingleFeature.html) / [Jupyter](classification/ClassificationContinuousSingleFeature.ipynb))
+- __Bivariate parametric function__ as a boundary, __approximated with logistic regression__, homemade, using SciKit Learn ([HTML](classification/ClassificationContinuous2Features.html) / [Jupyter](classification/ClassificationContinuous2Features.ipynb))
+  - Using Tensor flow ([HTML](classification/ClassificationContinuous2Features-TensorFlow.html) / [Jupyter](classification/ClassificationContinuous2Features-TensorFlow.ipynb))
+  - Using Keras, adding regularizers and eventually a two layer neural net ([HTML](classification/ClassificationContinuous2Features-Keras.html) / [Jupyter](classification/ClassificationContinuous2Features-Keras.ipynb))
   
 ### Binary classification with non-parametric models
 
 Beyond (linear) regression, non-parametric models:
-- [Bivariate with K Nearest Neighbors (KNN)](classification/ClassificationContinuous2Features-KNN.html), homemade, using SciKit Learn ([Notebook](classification/ClassificationContinuous2Features-KNN.ipynb))
+- __Bivariate with K Nearest Neighbors (KNN)__, homemade, using SciKit Learn ([HTML]((classification/ClassificationContinuous2Features-KNN.html) / [Jupyter](classification/ClassificationContinuous2Features-KNN.ipynb))
 
 ### Multi-class regression
 
 Going further with more than two classes or categories:
 - Two features to separate the 2D plan into 3 or more categories
-  - [Using Keras](classification/ClassificationMulti2Features-Keras.html) matching on linearly separable problem (Czech flag) and not linearly separable problem (Norway flag), using 2 and 3 layer neural net to handle the second problem ([Notebook](classification/ClassificationMulti2Features-Keras.ipynb))
+  - Using Keras matching on linearly separable problem (Czech flag) and not linearly separable problem (Norway flag), using 2 and 3 layer neural net to handle the second problem ([HTML](classification/ClassificationMulti2Features-Keras.html) / [Jupyter](classification/ClassificationMulti2Features-Keras.ipynb))
   
   
 # Reading list
@@ -59,9 +60,10 @@ Going further with more than two classes or categories:
 - [What are biases in my word embeddings ? - N. Swinger et al.](https://arxiv.org/pdf/1812.08769.pdf)
   
   
-## Tutorials
+## Tutorials and courses
 
 - [Deep learning tutorial - Stanford](http://ufldl.stanford.edu/tutorial/)
+- [High dimension statistics - MIT OpenCourseware 18s997, 2015] (https://ocw.mit.edu/courses/mathematics/18-s997-high-dimensional-statistics-spring-2015/lecture-notes/)
 
 ## Articles
 
