@@ -48,9 +48,21 @@ Going further with more than two classes or categories:
   
 # Reading list
 
+## Books
+
+- Deep Learning - I. Goodfellow, Y. Bengio, A. Courville, The MIT Press. 
+    - Very good overview of machine learning and its extension to deep learning
+- An Introduction to Statistical Learning with Applications in R - G. James, D. Witten, T. Hastie, R. Tibshirani. 
+    - Traditional machine learning including regressions, clustering, SVM...
+
 ## Nice notebooks
 
 - [Probabilistic programming and Bayesian methods for hackers](https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers)
+
+## Tutorials and courses
+
+- [Deep learning tutorial - Stanford](http://ufldl.stanford.edu/tutorial/)
+- [High dimension statistics - MIT OpenCourseware 18s997, 2015] (https://ocw.mit.edu/courses/mathematics/18-s997-high-dimensional-statistics-spring-2015/lecture-notes/)
 
 ## Papers
 
@@ -60,11 +72,6 @@ Going further with more than two classes or categories:
 - [What are biases in my word embeddings ? - N. Swinger et al.](https://arxiv.org/pdf/1812.08769.pdf)
   
   
-## Tutorials and courses
-
-- [Deep learning tutorial - Stanford](http://ufldl.stanford.edu/tutorial/)
-- [High dimension statistics - MIT OpenCourseware 18s997, 2015] (https://ocw.mit.edu/courses/mathematics/18-s997-high-dimensional-statistics-spring-2015/lecture-notes/)
-
 ## Articles
 
 - Build the right autoencoder — Tune and Optimize using PCA principles - Medium [Part I](https://medium.com/@cran2367/build-the-right-autoencoder-tune-and-optimize-using-pca-principles-part-i-1f01f821999b), [Part II](https://medium.com/@cran2367/build-the-right-autoencoder-tune-and-optimize-using-pca-principles-part-ii-24b9cca69bd6)
@@ -76,8 +83,3 @@ Going further with more than two classes or categories:
 - [ConceptNet](http://www.conceptnet.io/)
 - [GloVe: Global Vectors for Word Representation - Stanford](https://nlp.stanford.edu/projects/glove/)
 - [Opinion Mining, Sentiment Analysis, and Opinion Spam Detection](https://www.cs.uic.edu/~liub/FBS/sentiment-analysis.html)
-
-## Books
-
-- Deep Learning - I. Goodfellow, Y. Bengio, A. Courville, The MIT Press. Very overview of machine learning and its extension to deep learning
-- An Introduction to Statistical Learning with Applications in R - G. James, D. Witten, T. Hastie, R. Tibshirani. Traditional machine learning including regressions, clustering, SVM...
