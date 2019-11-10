@@ -37,7 +37,7 @@ Let's start with the binary classification and logistic regression and add some 
 ### Binary classification with non-parametric models
 
 Beyond (linear) regression, non-parametric models:
-- __Bivariate with K Nearest Neighbors (KNN)__, homemade, using SciKit Learn ([HTML]((classification/ClassificationContinuous2Features-KNN.html) / [Jupyter](classification/ClassificationContinuous2Features-KNN.ipynb))
+- __Bivariate with K Nearest Neighbors (KNN)__, homemade, using SciKit Learn ([HTML](classification/ClassificationContinuous2Features-KNN.html) / [Jupyter](classification/ClassificationContinuous2Features-KNN.ipynb))
 
 ### Multi-class regression
 
