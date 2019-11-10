@@ -62,7 +62,7 @@ Going further with more than two classes or categories:
 ## Tutorials and courses
 
 - [Deep learning tutorial - Stanford](http://ufldl.stanford.edu/tutorial/)
-- [High dimension statistics - MIT OpenCourseware 18s997, 2015] (https://ocw.mit.edu/courses/mathematics/18-s997-high-dimensional-statistics-spring-2015/lecture-notes/)
+- [High dimension statistics - MIT OpenCourseware 18s997, 2015](https://ocw.mit.edu/courses/mathematics/18-s997-high-dimensional-statistics-spring-2015/lecture-notes/)
 
 ## Papers
 
