@@ -8,6 +8,11 @@ On purpose, datasets are generated in order to adjust the parameters fitting wit
 
 The notebooks are of type Jupyter, using Python 3.
 
+__Best view on the notebooks are :__
+- Browser notebooks in HTML from [the HTML table of content](https://tonio73.github.io/data-science/)
+- Open this repository [in nbviewer](https://nbviewer.jupyter.org/github/tonio73/data-science/tree/master/)
+- Clone the repository in order to test and modify locally within Jupyter ou JupyterLab
+
 ![Do not get confused](assets/Confused_640.png)
 
 ## Linear regression
