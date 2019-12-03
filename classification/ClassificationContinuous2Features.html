@@ -13102,7 +13102,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Binary-classification-from-2-features">Binary classification from 2 features<a class="anchor-link" href="#Binary-classification-from-2-features">&#182;</a></h1><p>Classification using "raw" python or libraries.</p>
+<h1 id="Binary-classification-from-2-features">Binary classification from 2 features<a class="anchor-link" href="#Binary-classification-from-2-features">&#182;</a></h1><p>Classification using "raw" python or libraries to implement logistic regression.</p>
 <p>The classification is on a single boundary defined by a continuous function and added white noise.</p>
 <p>Linear regression is about finding the line, plan or hyper plan that has the best fit with the model. The predicted samples is a value.</p>
 <p>Binary classification is about splitting the space into two halves with the best line/plan/hyper plan. The predicted sample is a probability that is transformed into a boolean using the threshold of 0.5.</p>
@@ -13388,9 +13388,9 @@ $$\begin{align}
 \end{align}$$</p>
 <p>Using the fact that $y_i$ is either 0 or 1</p>
 <p>If using an iterative algorithm, the cost function to minimize is taken as the negative maximum log likelyhood:
-$$\begin{align}
-J{_\theta} &amp; = - \sum_{i=0}^N{log \biggl(y_i * \bigl(\frac{1}{1+e^{-f_\theta(x_i)}}\bigr) + \bigl(1-y_i\bigr) * \bigl(1-\frac{1}{1+e^{-f_\theta(x_i)}}\bigr) \biggr)} \\
-\end{align}$$</p>
+$$
+J_\theta = - \sum_{i=0}^N{log \left(y_i * \left(\frac{1}{1 + e^{-f_\theta(x_i)}}\right) + \left(1 -y_i\right) * \left(1 - \frac{1}{1+e^{-f_\theta(x_i)}}\right) \right)} 
+$$</p>
 <p>Reference:</p>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Logistic_regression">https://en.wikipedia.org/wiki/Logistic_regression</a></li>

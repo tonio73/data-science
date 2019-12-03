@@ -50,7 +50,10 @@ Going further with more than two classes or categories:
 - __Two features to separate the 2D plan into 3 or more categories__
   - Using Keras matching on __linearly separable problem__ (Czech flag) and __not linearly separable problem__ (Norway flag), using 2 and 3 layer neural net to handle the second problem ([HTML](classification/ClassificationMulti2Features-Keras.html) / [Jupyter](classification/ClassificationMulti2Features-Keras.ipynb))
   
-  
+ ### Multi-class classification with non-parametric models 
+
+- __Multi-class classification using decision trees__ ([HTML](classification/ClassificationMulti2Features-Tree.html) / [Jupyter](classification/ClassificationMulti2Features-Tree.ipynb))
+
 # Reading list
 
 ## Books

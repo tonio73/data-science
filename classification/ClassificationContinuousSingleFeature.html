@@ -13374,8 +13374,8 @@ f_\theta(x) &amp; = b + w x \\
 \begin{align}
 \hat{\theta} &amp; = \max_{\theta}{\prod_{i=0}^N{p(y_i \mid  x_i, w)}} \\
 &amp; = \max_{\theta}{\sum_{i=0}^N{log \bigl(p(y_i \mid x_i, w)\bigr)} } \\
-&amp; = \max_{\theta}{\sum_{i=0}^N{log \biggl(\bigl(\frac{1}{1+e^{-f_\theta(x)}}\bigr)^{y_i}\bigl(1-\frac{1}{1+e^{-f_\theta(x)}}\bigr)^{1-y_i}\biggr)} } \\
-&amp; = \max_{\theta}{\sum_{i=0}^N{log \biggl(y_i * \bigl(\frac{1}{1+e^{-f_\theta(x)}}\bigr) + \bigl(1-y_i\bigr) * \bigl(1-\frac{1}{1+e^{-f_\theta(x)}}\bigr) \biggr)} } \\
+&amp; = \max_{\theta}{\sum_{i=0}^N{log \biggl(\bigl(\frac{1}{1+e^{-f_\theta(x_i)}}\bigr)^{y_i}\bigl(1-\frac{1}{1+e^{-f_\theta(x_i)}}\bigr)^{1-y_i}\biggr)} } \\
+&amp; = \max_{\theta}{\sum_{i=0}^N{log \biggl(y_i * \bigl(\frac{1}{1+e^{-f_\theta(x_i)}}\bigr) + \bigl(1-y_i\bigr) * \bigl(1-\frac{1}{1+e^{-f_\theta(x_I)}}\bigr) \biggr)} } \\
 \end{align}</p>
 <p>Using the fact that $y_i$ is either 0 or 1</p>
 <p>Reference:</p>
