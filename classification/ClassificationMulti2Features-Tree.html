@@ -16622,7 +16622,7 @@ weighted avg       0.72      0.71      0.71      1000
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h2><p>Tree classifier provides a simple algorithm that is able to cope with non linearly separable problems like Norway flag.</p>
-<p>Its performance, as measured by the F1-score or accuracy, is very close to the one achieved by neural networks (see <a href="ClassificationMulti2Features-Keras.html">HTML</a> / <a href="ClassificationMulti2Features-Keras.ipynb">Jupyter</a>) but the design cost is way lower. The prediction cost might also be lower as well : it requires maximum $log(d)$ comparisons where $d$ is the depth of the tree.</p>
+<p>Its performance, as measured by the F1-score or accuracy, is very close to the one achieved by neural networks (see <a href="ClassificationMulti2Features-Keras.html">HTML</a> / <a href="ClassificationMulti2Features-Keras.ipynb">Jupyter</a>) but the design cost is way lower. The prediction cost might also be lower as well : it requires maximum $d = log_2(N)$ comparisons where $d$ is the depth and $N$ the number of leaves of the tree.</p>
 
 </div>
 </div>
