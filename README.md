@@ -55,6 +55,11 @@ Going further with more than two classes or categories:
 
 - __Multi-class classification using decision trees__ ([HTML](classification/ClassificationMulti2Features-Tree.html) / [Jupyter](classification/ClassificationMulti2Features-Tree.ipynb))
 
+### Convolutional neural networks (CNN)
+
+- __Introduction to CNN as an image filter, part 1__ ([HTML](cnn/CnnEdgeDetection-Keras-Part1.html) / [Jupyter](cnn/CnnEdgeDetection-Keras-Part1.ipynb))
+- __CNN versus Dense comparison on MNIST, part 1__ ([HTML](cnn/CnnVsDense-Part1.html) / [Jupyter](cnn/CnnVsDense-Part1.ipynb))
+
 # Reading list
 
 ## Books

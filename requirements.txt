@@ -5,3 +5,6 @@ scipy
 sklearn
 sympy
 tensorflow
+seaborn
+opencv
+tensorview
