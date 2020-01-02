@@ -58,7 +58,10 @@ Going further with more than two classes or categories:
 ### Convolutional neural networks (CNN)
 
 - __Introduction to CNN as an image filter, part 1__ ([HTML](cnn/CnnEdgeDetection-Keras-Part1.html) / [Jupyter](cnn/CnnEdgeDetection-Keras-Part1.ipynb))
-- __CNN versus Dense comparison on MNIST, part 1__ ([HTML](cnn/CnnVsDense-Part1.html) / [Jupyter](cnn/CnnVsDense-Part1.ipynb))
+- __CNN versus Dense comparison on MNIST__
+    - Part 1 - Design and performance comparison ([HTML](cnn/CnnVsDense-Part1.html) / [Jupyter](cnn/CnnVsDense-Part1.ipynb))
+    - Part 2 - Resilience to geometric transformations - coming soon!
+    - Part 3 - Visualization with UMAP ([HTML](cnn/CnnVsDense-Part1.html) / [Jupyter](cnn/CnnVsDense-Part1.ipynb))
 
 # Reading list
 

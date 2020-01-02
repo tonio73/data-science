@@ -7,4 +7,5 @@ sympy
 tensorflow
 seaborn
 opencv
+bokeh
 tensorview
