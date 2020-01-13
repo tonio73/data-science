@@ -59,8 +59,8 @@ Let's progressively start from simple univariate example and then add progressiv
     - Part 2 - Combined horizontal-vertical edge detector using multiple convolutionnal units - coming soon !
 - __CNN versus Dense comparison on MNIST__
     - Part 1 - Design and performance comparison ([HTML](cnn/CnnVsDense-Part1.html) / [Jupyter](cnn/CnnVsDense-Part1.ipynb))
-    - Part 2 - Resilience to geometric transformations - coming soon!
-    - Part 3 - Visualization with UMAP ([HTML](cnn/CnnVsDense-Part1.html) / [Jupyter](cnn/CnnVsDense-Part1.ipynb))
+    - Part 2 - Visualization with UMAP ([HTML](cnn/CnnVsDense-Part2-Visualization.html) / [Jupyter](cnn/CnnVsDense-Part2-Visualization.ipynb))
+    - Part 3 - Resilience to geometric transformations - coming soon!
 
 # Reading list
 
