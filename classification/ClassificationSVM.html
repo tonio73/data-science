@@ -13279,9 +13279,9 @@ $$ \underset{w, b}{\max} M $$
 <p>$x_i$ and $y_i$ are samples of $x$ and $y$, a row of the matrix $X$ and the vector $y$.</p>
 <p>However, we may change the condition on the norm of $w$ such that : $\Vert w \Vert = \frac 1M$</p>
 <p>Leading to the equivalent statement of the maximum margin classifier : 
-$$ \underset{w, b}{\max} \frac 12 \Vert w \Vert^2 $$
+$$ \min_{w, b} \frac 12 \Vert w \Vert^2 $$
 <strong>Subject to : $y_i(x_i^T w + b) \ge 1, i = 1..n$</strong></p>
-<p>For more explainations, see [1, chap 4.5]</p>
+<p>For more details, see [1, chap 4.5]</p>
 
 </div>
 </div>
@@ -13791,12 +13791,11 @@ $$ \underset{w, b}{\max} M ( 1 - \xi_i) $$<p><strong>Subject to $\forall i = 1..
 <li>$\xi_i \ge 0$</li>
 </ul>
 <p>Equivalently :
-$$ \underset{w, b}{\max} (w) + C \sum_{i=1}^n \xi_i$$
+$$ \min_{w, b} \frac 12 \Vert w \Vert^2 + C \sum_{i=1}^n \xi_i$$
 <strong>Subject to $\forall i = 1..n$:</strong></p>
 <ul>
 <li>$\xi_i \ge 0$</li>
 <li>$y_i(x_i^T w + b) \ge 1 - \xi_i$</li>
-<li>$\Vert w \Vert = 1$</li>
 </ul>
 
 </div>
