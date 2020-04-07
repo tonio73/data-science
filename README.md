@@ -61,6 +61,13 @@ Let's progressively start from simple univariate example and then add progressiv
     - Part 1 - Design and performance comparison ([HTML](cnn/CnnVsDense-Part1.html) / [Jupyter](cnn/CnnVsDense-Part1.ipynb))
     - Part 2 - Visualization with UMAP ([HTML](cnn/CnnVsDense-Part2-Visualization.html) / [Jupyter](cnn/CnnVsDense-Part2-Visualization.ipynb))
     - Part 3 - Resilience to geometric transformations - coming soon!
+- **Interpretability**
+    - Activation maps on CIFAR-10 ([HTML](cnn/CnnVisualization-1-Activations.html) / [Jupyter](cnn/CnnVisualization-1-Activations.ipynb))
+    - Saliency maps on CIFAR-10 ([HTML](cnn/CnnVisualization-2-SaliencyMaps.html) / [Jupyter](cnn/CnnVisualization-2-SaliencyMaps.ipynb))
+    - Saliency maps on Imagenet (subset) with ResNet50 ([HTML](cnn/CnnVisualization-3-ResNet.html) / [Jupyter](cnn/CnnVisualization-3-ResNet.ipynb)) (WORK ON GOING)
+    - CNN as a graph using NetworkX, extract centrality values ([HTML](cnn/CnnVisualization-5-Graph.html) / [Jupyter](cnn/CnnVisualization-5-Graph.ipynb)) (WORK ON GOING)
+- Other CNNs
+    - Fashion MNIST CNN with Data Augmentation ([HTML](cnn/CnnMnistFashion-Keras.html) / [Jupyter](cnn/CnnMnistFashion-Keras.ipynb))
 
 # Reading list
 
