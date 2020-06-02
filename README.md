@@ -69,6 +69,12 @@ Let's progressively start from simple univariate example and then add progressiv
 - Other CNNs
     - Fashion MNIST CNN with Data Augmentation ([HTML](cnn/CnnMnistFashion-Keras.html) / [Jupyter](cnn/CnnMnistFashion-Keras.ipynb))
 
+### Natural Language Processing (NLP)
+
+- Classification of mountaineering routes based on the textual description with *fastText and Tensorflow* ([HTML](nlp/C2C_Fasttext-Tensorflow.ipynb) / [Jupyter](nlp/C2C_Fasttext-Tensorflow.ipynb))
+  - Summarized in Medium article ["Full NLP use case with fastText and Tensorflow 2"](https://towardsdatascience.com/full-nlp-use-case-with-fasttext-and-tensorflow-2-748381879e33[)
+  - Data preparation ([HTML](nlp/DownloadC2cRoutes.ipynb) / [Jupyter](nlp/DownloadC2cRoutes.ipynb))
+
 # Reading list
 
 ## Books
