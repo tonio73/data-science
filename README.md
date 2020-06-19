@@ -52,22 +52,30 @@ Let's progressively start from simple univariate example and then add progressiv
 
 - __Multi-class classification using decision trees__ ([HTML](classification/ClassificationMulti2Features-Tree.html) / [Jupyter](classification/ClassificationMulti2Features-Tree.ipynb))
 
+## Deep learning
+
 ### Convolutional neural networks (CNN)
 
 - __Introduction to CNN as an image filter__
     - Part 1 - Horizontal edge detector using a simple 1-2 layer neural nets ([HTML](cnn/CnnEdgeDetection-Keras-Part1.html) / [Jupyter](cnn/CnnEdgeDetection-Keras-Part1.ipynb))
-    - Part 2 - Combined horizontal-vertical edge detector using multiple convolutionnal units - coming soon !
+    - <u>*coming soon*</u> Part 2 - Combined horizontal-vertical edge detector using multiple convolutionnal units
 - __CNN versus Dense comparison on MNIST__
     - Part 1 - Design and performance comparison ([HTML](cnn/CnnVsDense-Part1.html) / [Jupyter](cnn/CnnVsDense-Part1.ipynb))
     - Part 2 - Visualization with UMAP ([HTML](cnn/CnnVsDense-Part2-Visualization.html) / [Jupyter](cnn/CnnVsDense-Part2-Visualization.ipynb))
-    - Part 3 - Resilience to geometric transformations - coming soon!
+    -  <u>*coming soon*</u> Part 3 - Resilience to geometric transformations
 - **Interpretability**
     - Activation maps on CIFAR-10 ([HTML](cnn/CnnVisualization-1-Activations.html) / [Jupyter](cnn/CnnVisualization-1-Activations.ipynb))
     - Saliency maps on CIFAR-10 ([HTML](cnn/CnnVisualization-2-SaliencyMaps.html) / [Jupyter](cnn/CnnVisualization-2-SaliencyMaps.ipynb))
-    - Saliency maps on Imagenet (subset) with ResNet50 ([HTML](cnn/CnnVisualization-3-ResNet.html) / [Jupyter](cnn/CnnVisualization-3-ResNet.ipynb)) (WORK ON GOING)
-    - CNN as a graph using NetworkX, extract centrality values ([HTML](cnn/CnnVisualization-5-Graph.html) / [Jupyter](cnn/CnnVisualization-5-Graph.ipynb)) (WORK ON GOING)
+    - Saliency maps on Imagenet (subset) with ResNet50 ([HTML](cnn/CnnVisualization-3-ResNet.html) / [Jupyter](cnn/CnnVisualization-3-ResNet.ipynb)) (*WORK ON GOING*)
+    - CNN as a graph using NetworkX, extract centrality values ([HTML](cnn/CnnVisualization-5-Graph.html) / [Jupyter](cnn/CnnVisualization-5-Graph.ipynb)) (*WORK ON GOING*)
 - Other CNNs
     - Fashion MNIST CNN with Data Augmentation ([HTML](cnn/CnnMnistFashion-Keras.html) / [Jupyter](cnn/CnnMnistFashion-Keras.ipynb))
+
+### Generative networks (VAE, GAN)
+
+- **Generative Adversarial Networkds (GAN), the basics on MNIST, with Tensorflow 2 / Keras and Tensorflow Datasets**
+  - *<u>NEW</u>* Original GAN using Dense layers  ([HTML](generative/MNIST_GAN.html) / [Jupyter](generative/MNIST_GAN.ipynb))
+  - *<u>NEW</u>* GAN with convolutions (DCGAN) ([HTML](generative/MNIST_DCGAN.html) / [Jupyter](generative/MNIST_DCGAN.ipynb))
 
 ### Natural Language Processing (NLP)
 
