@@ -74,8 +74,10 @@ Let's progressively start from simple univariate example and then add progressiv
 ### Generative networks (VAE, GAN)
 
 - **Generative Adversarial Networkds (GAN), the basics on MNIST, with Tensorflow 2 / Keras and Tensorflow Datasets**
-  - *<u>NEW</u>* Original GAN using Dense layers  ([HTML](generative/MNIST_GAN.html) / [Jupyter](generative/MNIST_GAN.ipynb))
-  - *<u>NEW</u>* GAN with convolutions (DCGAN) ([HTML](generative/MNIST_DCGAN.html) / [Jupyter](generative/MNIST_DCGAN.ipynb))
+  - Original GAN using Dense layers  ([HTML](generative/MNIST_GAN.html) / [Jupyter](generative/MNIST_GAN.ipynb))
+  - GAN with convolutions (DCGAN) ([HTML](generative/MNIST_DCGAN.html) / [Jupyter](generative/MNIST_DCGAN.ipynb))
+  - GAN with convolutions (DCGAN), no Dense layer on the generator path ([HTML](generative/MNIST_SmallDCGAN.html) / [Jupyter](generative/MNIST_SmallDCGAN.ipynb))
+  - GAN and Bayesian network on ski outing reports and prediction of global warming impact on skiing in the Alps ([HTML](generative/GAN_ski_outings.html) / [Jupyter](generative/GAN_ski_outings.ipynb))
 
 ### Natural Language Processing (NLP)
 
